@@ -1,0 +1,56 @@
+
+time {
+    clear: none;
+    text-align: center;
+}
+body p {
+    text-align: justify;
+}
+#logoHoat {
+    opacity: 0.5;
+}
+nav {
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+}
+header {
+    padding-top: 3%;
+}
+#univOsc {
+    float: left;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+}
+/* Inicio Background Animación */
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'codropsicons';
+    src:url('../fonts/codropsicons/codropsicons.eot');
+    src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+        url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+        url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+.demo-1 {
+    background-image: url('../img/demo-1-bg.jpg');
+    background-size: cover;
+}
+@media only screen and (max-width : 896px) {
+    .demo-1 {
+        font-size: 2em;
+        padding-top: -50%;
+    }
+}
+.main-title { /*Texto en centro del background animado */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
