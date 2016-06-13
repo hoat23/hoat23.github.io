@@ -131,15 +131,54 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
+                <h5 class="white-text"></h5>
                 <p class="grey-text text-lighten-4">Esta pagina fue creada utilizando Materialize como framework, según indicaba el reto 3 asimismo se utilizo uno de los demos recomendados en el reto 2, del curso online de HackSpace.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Encuentranos en:</h5>
                 <div>
-                  <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/facebook.png" width="30px" alt=""></a>
-                  <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/gmail.png" width="30px" alt=""></a>
-                  <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/twitter.png" width="30px" alt=""></a>
+                    <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/facebook.png" width="30px" alt=""></a>
+                    <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/gmail.png" width="30px" alt=""></a>
+                    <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/twitter.png" width="30px" alt=""></a>
+                    <br>
+                    <!--Modal Trigger-->
+                    <a class="waves-efect waves-light btn modal-trigger" href="#modal">Suscribirse</a>
+                    <!-- Modal Structure -->
+                    <div id="modal" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                             <h4>Formulario de Suscripción</h4>
+                                <div class="row">
+                                <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s6">
+                                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                  <label for="first_name">Nombre</label>
+                                </div>
+                                <div class="input-field col s6">
+                                  <input id="last_name" type="text" class="validate">
+                                  <label for="last_name">Apellido</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="email" type="email" class="validate">
+                                  <label for="email">Correo</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="phone" type="phone" class="validate">
+                                  <label for="email">Teléfono</label>
+                                </div>
+                              </div>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -149,10 +188,17 @@
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
-        </footer>    
+        </footer>
+        <!--Modal-->
+        <script>
+            $(document).ready(function() {
+                $('.modal-trigger').leanModal();
+            });
+        </script>    
         <!--Importa jQuery antes de materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
         <!-- Background Animation -->
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
