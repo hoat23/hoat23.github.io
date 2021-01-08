@@ -141,7 +141,7 @@
                     <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/facebook.png" width="30px" alt=""></a>
                     <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/gmail.png" width="30px" alt=""></a>
                     <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/twitter.png" width="30px" alt=""></a>
-                    <a class="grey-text text-lighten-3" href="#!"><div id="myZadarmaCallmeWidget8608" width="30px" alt="">Callme</div></a>
+                    <a class="grey-text text-lighten-3" href="#!"><div id="zadarmaScripts"><div id="myZadarmaCallmeWidget8608" width="30px" alt="">Callme</div></div></a>
                     <br>
                     <!--Modal Trigger-->
                     <a class="waves-efect waves-light btn modal-trigger" href="#modal">Contactame</a>
@@ -240,6 +240,13 @@
             $(document).ready(function() {
                 $('.modal-trigger').leanModal();
             });
+           
+           (function() {
+              var script = document.createElement('script');
+   	      script.src = 'https://my.zadarma.com/callmewidget/v2.0.8/loader.js';
+	      document.getElementById('zadarmaScripts').appendChild(script);
+           }());
+
         </script>
     </body>
 </html>
