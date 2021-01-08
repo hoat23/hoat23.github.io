@@ -143,7 +143,8 @@
                     <a class="grey-text text-lighten-3" href="#!"><img src="img/icons/twitter.png" width="30px" alt=""></a>
                     <br>
                     <!--Modal Trigger-->
-                    <div id="myZadarmaCallmeWidget8608"><a class="waves-efect waves-light btn modal-trigger" href="#modal">Hablemos</a></div>
+                    <a class="waves-efect waves-light btn modal-trigger" href="#modal">Hablemos</a>
+	            <a><div id="myZadarmaCallmeWidget8608"></div></a>
                     <!-- Modal Structure -->
                     <div id="modal" class="modal">
                         <div class="modal-content">
@@ -204,9 +205,6 @@
 		<script src="js/demo-1.js"></script>
         <!--Modal-->
         <script>
-            $(document).ready(function() {
-                $('.modal-trigger').leanModal();
-            });
 	    var myZadarmaCallmeWidget8608;
 	    var myZadarmaCallmeWidgetFn8608 = function() {
 	           myZadarmaCallmeWidget8608 = new ZadarmaCallmeWidget("myZadarmaCallmeWidget8608");
@@ -238,6 +236,10 @@
 	    } else if (window.attachEvent) {
 	       window.attachEvent('onload', myZadarmaCallmeWidgetFn8608);
 	    }
+	    
+            $(document).ready(function() {
+                $('.modal-trigger').leanModal();
+            });
         </script>
     </body>
 </html>
