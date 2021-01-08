@@ -13,13 +13,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
         <!-- Fin Background -->
         <link rel="stylesheet" href="css/estilos.css">
-	<script>
-        (function() {
-              var script = document.createElement('script');
-   	      script.src = 'https://my.zadarma.com/callmewidget/v2.0.8/loader.js';
-	      document.getElementById('zadarmaScripts').appendChild(script);
-           }());
-       </script>
     </head>
     <body>
         <div class="demo-1 hide-on-small-only">
@@ -212,7 +205,7 @@
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
         <!--Modal-->
-        <script>
+        <script type="text/javascript">
 	    var myZadarmaCallmeWidget8608;
 	    var myZadarmaCallmeWidgetFn8608 = function() {
 	           myZadarmaCallmeWidget8608 = new ZadarmaCallmeWidget("myZadarmaCallmeWidget8608");
@@ -249,5 +242,12 @@
                 $('.modal-trigger').leanModal();
             });
         </script>
+        <script>
+        (function() {
+              var script = document.createElement('script');
+   	      script.src = 'https://my.zadarma.com/callmewidget/v2.0.8/loader.js';
+	      document.getElementById('zadarmaScripts').appendChild(script);
+           }());
+       </script>
     </body>
 </html>
